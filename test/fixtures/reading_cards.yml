@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reading: one
+  tarot_card: one
+  position: 1
+
+two:
+  reading: two
+  tarot_card: two
+  position: 1
