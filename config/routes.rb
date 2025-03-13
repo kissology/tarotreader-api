@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   # Other routes (if needed for users, etc.)
   resources :users, only: [:index, :show, :create, :update, :destroy]
   resources :tarot_cards, only:[:index, :show, :create]
+  resources :readings, only:[:index, :show, :create]
 
 end
