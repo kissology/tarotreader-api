@@ -14,6 +14,8 @@ module TarotreaderApi
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore, key: '_tarotreader_session'
 
+    config.middleware.insert_before Rack::Head, Rack::TempfileReaper
+
     config.api_only = true
   end
 end

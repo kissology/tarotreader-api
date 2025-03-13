@@ -13,13 +13,13 @@ class UsersController < ApplicationController
   
     # POST /users
     def create
-      user = User.create!(user_params)  # No need for manual error handling
+      user = User.create!(user_params)  
       render json: user, status: :created
     end
   
     # PATCH/PUT /users/:id
     def update
-      @user.update!(user_params)  # `update!` ensures validation errors are raised
+      @user.update!(user_params)  
       render json: @user
     end
   
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     private
   
     def set_user
-      @user = User.find(params[:id])  # Automatically raises 404 if not found
+      @user = User.find(params[:id])  
     end
   
     def user_params
